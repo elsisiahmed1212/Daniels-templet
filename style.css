@@ -1,0 +1,520 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.titel h3::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 10%;
+    left: 0;
+    bottom: -10px;
+    background-image: url('images/dots.png');
+}
+:root{
+    --pading-11:11px;
+    --progric:20px;
+}
+:root{
+    --white-color:white;
+    --black-color:black;
+    --section-coloe:#F7F7F7;
+    --icon-color:#EEEEEE;
+    --card-info-color:#5B5B5B;
+}
+/* end general */
+/*start navbar */
+.nav-link{
+    color: var(--white-color);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--white-color);
+}
+.navbar-nav .nav-link.active{
+    position: relative;
+}
+.navbar-nav .nav-link.active::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    background-color:var(--white-color);
+    bottom: -2px;
+}
+/*end navbar */
+
+/*start hader*/
+.hader{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgb(0, 0, 0,0.7)),url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.hader .info p span::after{
+    content: '';
+    animation: typing 16s infinite;
+}
+.hader .icons span{
+    font-size: 17px;
+    padding: var(--pading-11);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 58%;
+}
+
+@keyframes typing {
+    0% {
+        content: "L";
+    }
+
+    1% {
+        content: "La";
+    }
+
+    2% {
+        content: "Lar";
+    }
+
+    3% {
+        content: "Larr";
+    }
+
+    4% {
+        content: "Larry";
+    }
+
+    5% {
+        content: "Larry D";
+    }
+
+    6% {
+        content: "Larry Da";
+    }
+
+    7% {
+        content: "Larry Dan";
+    }
+
+    8% {
+        content: "Larry Dani";
+    }
+
+    9% {
+        content: "Larry Danie";
+    }
+
+    10% {
+        content: "Larry Daniel";
+    }
+
+    11% {
+        content: "Larry Daniels";
+    }
+
+    12% {
+        content: "Larry Daniel";
+    }
+
+    13% {
+        content: "Larry Danie";
+    }
+
+    14% {
+        content: "Larry Dani";
+    }
+
+    15% {
+        content: "Larry Dan";
+    }
+
+    16% {
+        content: "Larry Da";
+    }
+
+    17% {
+        content: "Larry D";
+    }
+
+    18% {
+        content: "Larry";
+    }
+
+    19% {
+        content: "Larr";
+    }
+
+    20% {
+        content: "Lar";
+    }
+
+    21% {
+        content: "La";
+    }
+
+    22% {
+        content: "La";
+    }
+
+    23% {
+        content: "L";
+    }
+
+    24% {
+        content: "D";
+    }
+
+    25% {
+        content: "De";
+    }
+
+    26% {
+        content: "Des";
+    }
+
+    27% {
+        content: "Desi";
+    }
+
+    28% {
+        content: "Desig";
+    }
+
+    29% {
+        content: "Design";
+    }
+
+    30% {
+        content: "Designe";
+    }
+
+    31% {
+        content: "Designer";
+    }
+
+    32% {
+        content: "Designe";
+    }
+
+    33% {
+        content: "Design";
+    }
+
+    34% {
+        content: "Desig";
+    }
+
+    35% {
+        content: "Desi";
+    }
+
+    36% {
+        content: "Des";
+    }
+
+    37% {
+        content: "De";
+    }
+
+    38% {
+        content: "D";
+    }
+
+    39% {
+        content: "D";
+    }
+
+    40% {
+        content: "De";
+    }
+
+    41% {
+        content: "Dev";
+    }
+
+    42% {
+        content: "Deve";
+    }
+
+    43% {
+        content: "Devel";
+    }
+
+    44% {
+        content: "Develo";
+    }
+
+    45% {
+        content: "Develop";
+    }
+
+    46% {
+        content: "Develope";
+    }
+
+    47% {
+        content: "Developer";
+    }
+
+    48% {
+        content: "Developer";
+    }
+
+    49% {
+        content: "Develope";
+    }
+
+    50% {
+        content: "Develop";
+    }
+
+    51% {
+        content: "Develo";
+    }
+
+    52% {
+        content: "Devel";
+    }
+
+    53% {
+        content: "Deve";
+    }
+
+    54% {
+        content: "Dev";
+    }
+
+    55% {
+        content: "De";
+    }
+
+    56% {
+        content: "D";
+    }
+    100% {
+        content: "Larry Daniels";
+    }
+}
+/*end hader*/
+
+/* start about */
+.progress, .progress-stacked{
+    --bs-progress-height: var(--progric);
+}
+.about picture{
+    position: relative;
+    
+}
+.about picture::after{
+    content: "";
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+    background-image: url('images/dots.png');
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about .data .buttons a:first-child{
+    background-color: var(--black-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: all 1s;
+}
+.about .data .buttons a:first-child:hover{
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    color: black;
+}
+
+.about .data .buttons a:last-child{
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border: 1px solid  var(--black-color);
+    color: b var(--black-color)lack;
+    transition: all 1s;
+}
+.about .data .buttons a:last-child:hover{
+    background-color:  var(--black-color);
+    color: var(--white-color);
+}
+/* end about */
+
+/*start Services*/
+.Services{
+    background-color: var(--section-coloe);
+}
+
+.Services .card .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.Services .card .icon i{
+    font-size: 25px;
+}
+.card {
+    --bs-card-border-width: none;
+}
+.card .ic .icon{
+    background-color: var(--icon-color);
+    transition: all 1s;
+}
+.card:hover .ic .icon{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+/*end Services*/
+
+/*start Portfolio*/
+.Portfolio .inner{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition:all 1s ;
+}
+.Portfolio .inner:hover{
+    opacity: 1;
+}
+.Portfolio .profile-icons span{
+    font-size: 15px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color:var(--black-color);
+    border-radius: 58%;
+    transition: all 1s;
+}
+.Portfolio .profile-icons span:hover{
+    color: var(--black-color);
+    background-color:var(--white-color);
+    border: 1px solid var(--black-color);
+}
+.nav-pills{
+    --bs-nav-pills-link-active-color: var(--black-color);
+    --bs-nav-pills-link-active-bg: none;
+}
+.nav-pills .nav-link {
+    color: var(--black-color);
+}
+.nav-pills .nav-link.active {
+   position: relative;
+}
+.Portfolio .nav-pills .nav-link.active::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    background-color: var(--black-color);
+    bottom: -2px;
+}
+/*end Portfolio*/
+
+/* start carousel */
+.carousel{
+    background-color: var(--section-coloe);
+}
+.carousel-indicators [data-bs-target] {
+    background-color: grey;
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+}
+.carousel .carousel-item img{
+    width: 6%;
+}
+.carousel-indicators {
+    bottom: 30px;
+}
+/* end carousel */
+
+/*start Team*/
+.Team{
+    background-color: var(--section-coloe);
+}
+.Team .card-info{
+    background-color:var(--card-info-color) ;
+}
+.Team .inner .images img{
+    transition: all 1s;
+}
+.Team .inner .images .inner-data{
+    position: absolute;
+    content: '';
+    top: 7px;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all .5s;
+}
+.Team .inner .images .inner-data span{
+    font-size: 15px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color:var(--black-color);
+    color: var(--white-color);
+    border-radius: 58%;
+    transition: all 1s;
+}
+.Team .inner .images .inner-data span:hover{
+    color: var(--black-color);
+    background-color:var(--white-color);
+    border: 1px solid var(--black-color);
+}
+.Team .inner:hover .images img{
+    scale: 1.2;
+}
+.Team .inner:hover .images .inner-data{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+/*end Team*/
+
+/* start Contact*/
+.Contact .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background-color: #F4F4F4;
+}
+.icons:hover .ic .icon{
+    background-color: var(--black-color);
+    color:var(--white-color);
+}
+.btn-primary {
+    --bs-btn-bg: var(--black-color);
+    transition: all .6s;
+}
+.btn:hover {
+    color:var(--black-color);
+    background-color: var(--white-color);
+    border-color: var(--black-color);
+}
+/* end Contact*/

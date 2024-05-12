@@ -1,0 +1,19 @@
+@media screen and (max-width: 480px) {
+.carousel .carousel-item img{
+    width: 25%;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+.carousel .carousel-item img{
+    width: 25%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.carousel .carousel-item img{
+    width: 27%;
+}
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+}
